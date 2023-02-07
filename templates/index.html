@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <link rel='stylesheet' href='static\styles\index.css'/>
+
+    <title>Home Page</title> 
+    <style>
+        body{
+    background-image :url('youtube.jfif');
+    background-size: cover;
+}
+    </style>
+
+</head>
+
+
+<body> 
+    <div class='header'>
+        <h1> Stroke Prediction App</h1>
+        <p> welcome to our application where you can predict Stroke for patients</p>
+    </div>
+
+    <div> 
+        <form action="/predict" method="GET">
+            
+            
+        
+
+            <label for="Age">Age</label><br>
+            <input type='number' step="0.2" id='Age' name='Age'><br><br>
+
+            <label for='Hypertension'>Hypertension</label><br>
+            <select id='Hypertension' name='Hypertension'>
+                <option value=0>0</option>
+                <option value=1>1</option>
+            </select><br><br>
+
+            <label for='Heart_Disease'>Heart_Disease</label><br>
+            <select id='Heart_Disease' name='Heart_Disease'>
+                <option value=0>0</option>
+                <option value=1>1</option>
+            </select><br><br>
+
+            <label for="Avg_Glucose_Level">Avg_Glucose_Level</label><br>
+            <input type='number' step=".1" id='Avg_Glucose_Level' name='Avg_Glucose_Level'><br><br>
+
+            <label for="BMI">BMI</label><br>
+            <input type='number' step="0.2" id='BMI' name='BMI'><br><br>
+
+            <label for='Gender'>Gender</label><br>
+            <select id='Gender' name='Gender'>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+                
+            </select><br><br>
+
+            <label for='Ever_Married'>Ever_Married</label><br>
+            <select id='Ever_Married' name='Ever_Married'>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+                
+                
+            </select><br><br>
+
+
+
+            <label for='Work_Type'>Work_Type</label><br>
+            <select id='Work_Type' name='Work_Type'>
+                <option>Govt_job</option>
+                <option>Never_worked</option>
+                <option>Private</option>
+                <option>Self-employed</option>
+                <option>children</option>
+                
+                
+            </select><br><br>
+        
+            <label for='Residence_Type'>Residence_Type</label><br>
+            <select id='Residence_Type' name='Residence_Type'>
+                <option>Rural</option>
+                <option>Urban</option>
+                
+                
+                
+            </select><br><br>
+
+
+            <label for='Smoking_Status'>Smoking_Status</label><br>
+            <select id='Smoking_Status' name='Smoking_Status'>
+                <option>Unknown</option>
+                <option>formerly smoked</option>
+                <option>never smoked</option>
+                <option>smokes</option>
+                
+                
+                
+            </select><br><br>
+
+            
+
+            
+
+            <input type="Submit" value="Predict"/>
+        </form>
+        
+    </div>
+
+
+</body>
